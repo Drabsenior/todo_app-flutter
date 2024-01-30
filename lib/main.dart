@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:todo_flutter/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(child: Text('Todo app',style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),)),
-        backgroundColor: Colors.deepPurple[100],
+        body: HomePage()
       ),
+      theme: ThemeData(primarySwatch:Colors.yellow),
     );
   }
 }
